@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tenta abrir esse site em outros dispositivos ou só aumente e diminua o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> 
+        <!--Se o navegador tiver menos de 750px, vai carregar a imagem foto-p.png-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!--Se o navegador tiver menos de 1050px, vai carregar a imagem foto-p.png-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!--Imagem padrão que será carregada-->
+    </picture>
+
+    <h1>Reproduzindo um áudio</h1>
+    <h2>Primeira forma</h2>
+
+    <audio src="midia/indecision.mp3" controls> </audio>
+
+    <h2>Segunda forma(indicada)</h2>
+
+    <audio preload="metadata" controls loop>
+        <!--Diferenças do preload:
+        auto: só vai começar a tocar, quando fizer o download do arquivo inteiro
+        metadata: puxa algumas informações e consegue tocar conforme vai baixando
+        none: não carrega nada e só reproduz quando o usuário aperta no play do controle-->
+
+        <source src="midia/indecision.mp3" type="audio/mpeg"> <!--Vai tentar tocar esse tipo primeiro-->
+        <source src="midia/indecision.wav" type="audio/wav">  <!--Caso não consiga, vai tocar este-->
+        <source src="midia/indecision.ogg" type="audio/ogg">  <!--E por último, tentará tocar este-->
+
+        <!--Nota: não use/evite o arquivo tipo wav, ele é muito pesado e sobrecarrega o site-->
+        <p>Infelizmente, seu navegador não consegue reproduzir o áudio, <a href="midia/indecision.mp3">clique aqui</a> 
+        para baixar o arquivo MP3</p>
+    </audio>
+</body>
+</html>

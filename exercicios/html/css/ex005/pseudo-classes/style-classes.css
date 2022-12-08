@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#d1, div#d2, div#d3 {
+    display: inline-block;
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid black;
+
+    height: 100px;
+    width: 100px;
+  }
+
+ 
+  /* pseudo-classes são representadas pelos : */
+  /* elas definem o estado de algo */
+
+  div#d1:hover ,div#d2:hover ,div#d3:hover{
+    background-color: rgba(0, 128, 0, 0.514);
+  }
+
+  /* -------------------------------------------- */
+
+  /* CSS do Exemplo */
+
+  div#d4{
+    width: 150px;
+  }
+
+  div#d4> p{
+    display: none;
+  }
+
+  div#d4:hover{
+    color: red;
+  }
+
+  div#d4:hover > p{
+    display: block;
+    color: white;
+    background-color: red;
+    width: 200px;
+    border-radius: 150px;
+    text-indent: 4px;
+  }

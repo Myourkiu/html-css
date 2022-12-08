@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia</title>
+</head>
+<body>
+    <h1>Mexendo com Midia</h1>
+    <p>Este video está hospedado no meu servidor!</p>
+    <h2>Forma primária</h2>
+    <video src="../midia/video-random.mp4" width="500" poster="../midia/foto.jpg" controls></video>
+
+    <h2>Forma Indicada</h2>
+    
+    <video controls width="500" poster="../midia/foto.jpg">
+        <source src="../midia/video-random.mp4" type="video/mp4">
+        <source src="../midia/video-random.m4v" type="video/mp4">
+        <source src="../midia/video-random.webm" type="video/webm">
+        <source src="../midia/video-random.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+
+    <h2>Inserindo videos do YouTube</h2>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/vlZ9MGgC1NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

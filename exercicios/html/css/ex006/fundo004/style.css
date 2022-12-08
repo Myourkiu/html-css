@@ -1,0 +1,28 @@
+#container {
+  background-image: url(../imagens/target001.png);
+  background-size: 100% 100%;
+  /* no background-size, é considerado width e height respectivamente */
+
+  position: relative;
+  height: 500px;
+  padding: 10px;
+  background-color: purple;
+}
+
+#conteudo {
+background-image: url(../imagens/target001.png);
+background-size: 100% 100%;
+
+  position: absolute;
+  height: 200px;
+  width: 400px;
+  background-color: yellow;
+
+  left: 50%;
+  top: 50%;
+
+  /* caso deixe somente assim, ele esta considerando a parte superior esquerda da imagem, portanto usaremos o transform para centralizar essa consideração */
+
+  transform: translate(-50%, -50%);
+  /* sendo esses valores o right e bottom respectivamente, valores negativos serão left e top. */
+}
