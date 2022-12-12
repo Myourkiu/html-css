@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>First Form</h1>
+    <form autocomplete="off" action="cadastro.cs">
+
+        <p><label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </p>
+
+        <p>
+            <label for="lastname">LastName:</label>
+            <input type="text" name="lastname" id="lastname">
+        </p>
+        
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </p>
+
+        <p><input type="submit" value="Submit"></p>
+    </form>
+    
+    <!-- Quando usar o method GET ou POST -->
+    <!-- 
+        GET: dados não sensíveis, menor que 3k bytes e não pode possuir arquivos
+        POST: dados sensíveis (como senhas), passou de 3k bytes, pode conter arquivos, URL compartilhável
+     -->
+</body>
+</html>
