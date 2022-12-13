@@ -9,26 +9,40 @@
 <body>
     <form action="cadastro.cs" method="post">
 
-        <p>
-            <label for="name">Nome:</label>
-            <input type="text" name="name" id="name" required autocomplete="name">
-        </p>
-        <p>
-            <label for="media">Média</label>
-            <input type="number" name="media" id="media" min="0" max="10" step="0.1" required>
-        </p>
-        <p>
-            <label for="mouth">Mês:</label>
-            <input type="month" name="month" id="month">
-        </p>
-        <p>
-            <label for="date">Dia:</label>
-            <input type="date" name="date" id="date">
-        </p>
-        <p>
-            <label for="hour">Hora:</label>
-            <input type="time" name="hour" id="hour">
-        </p>
+        <fieldset>
+            <legend>Dados do cliente</legend>
+            <p>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" required autocomplete="name">
+            </p>
+            <p>
+                <label for="media">Média</label>
+                <input type="number" name="media" id="media" min="0" max="10" step="0.1" required>
+            </p>
+            <p>
+                <label for="mouth">Mês:</label>
+                <input type="month" name="month" id="month">
+            </p>
+            <p>
+                <label for="date">Dia:</label>
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                <label for="hour">Hora:</label>
+                <input type="time" name="hour" id="hour">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel">
+            </p>
+
+        </fieldset>
+
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
